@@ -1,5 +1,6 @@
 ---
 title: Sandbox Two
+layout: default
 ---
 
 # Sandbox 2
