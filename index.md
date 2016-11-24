@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # ejball.com
 
 [Five Girls and their Guy](http://ejball.blogspot.com)
