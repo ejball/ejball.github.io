@@ -1,8 +1,13 @@
 ---
-layout: default
+layout: page
+title: ejball.com
 ---
 
-# ejball.com
+Ed Ball: Christian, husband, father, coder, etc.
 
-[Five Girls and their Guy](http://ejball.blogspot.com)
-: Our family blog.
+### Open Source Projects
+
+* [ArgsReading](ArgsReading/): A simple library for reading command-line arguments.
+* [RegexMatchValues](RegexMatchValues/): Converts regular expression matches to strong types.
+* [SqlRendering](SqlRendering/): Helps build SQL statements safely.
+* [XmlDocMarkdown](XmlDocMarkdown/): Generates Markdown from .NET XML documentation comments.

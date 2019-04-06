@@ -1,1 +1,3 @@
-title: "ejball.com"
+exclude:
+  - docker-compose.yml
+  - README.md
