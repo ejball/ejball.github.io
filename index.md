@@ -1,9 +1,9 @@
 
-## Ed Ball
+# Ed Ball
 
-Christian, husband, father, coder, etc. I'm on [Twitter](https://twitter.com/ejball), [StackOverflow](https://stackoverflow.com/users/23818/ed-ball), and [LinkedIn](https://www.linkedin.com/in/ejball94/).
+Christian, husband, father, coder, etc. I'm on [Twitter](https://twitter.com/ejball), [Stack Overflow](https://stackoverflow.com/users/23818/ed-ball), and [LinkedIn](https://www.linkedin.com/in/ejball94/).
 
-### Open Source Projects
+## Open Source Projects
 
 My open source projects are [hosted on GitHub](https://github.com/ejball):
 

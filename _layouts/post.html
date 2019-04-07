@@ -1,0 +1,9 @@
+---
+layout: default
+---
+<div class="col-sm-9 content-column">
+  <p><a href="{{ "/blog" | relative_url }}">&laquo; back to blog</a></p>
+  <hr>
+  {{ content }}
+  <p style="text-align: right">{{ page.category }} · {{ page.tags | join: ' · ' }} — <a href="{{ page.url }}">{{ page.date | date: "%B %-d, %Y" }}</a></p>
+</div>
