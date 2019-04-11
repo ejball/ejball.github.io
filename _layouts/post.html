@@ -2,8 +2,24 @@
 layout: default
 ---
 <div class="col-sm-9 content-column">
-  <p><a href="{{ "/blog" | relative_url }}">&laquo; back to blog</a></p>
-  <hr>
-  {{ content }}
-  <p style="text-align: right">{{ page.category }} · {{ page.tags | join: ' · ' }} — <a href="{{ page.url }}">{{ page.date | date: "%B %-d, %Y" }}</a></p>
+
+<p><a href="{{ "/blog" | relative_url }}">&laquo; back to blog</a></p>
+<hr>
+{{ content }}
+<p style="text-align: right">{{ page.category }} · {{ page.tags | join: ' · ' }} — <a href="{{ page.url }}">{{ page.date | date: "%B %-d, %Y" }}</a></p>
+
+<div id="disqus_thread"></div>
+<script>
+var disqus_config = function () {
+this.page.url = "https://ejball.com{{ page.url }}";
+this.page.identifier = "{{ page.url }}";
+};
+(function() {
+var d = document, s = d.createElement('script');
+s.src = 'https://ejball.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+
 </div>
