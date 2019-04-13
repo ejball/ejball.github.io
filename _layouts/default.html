@@ -17,7 +17,9 @@
     integrity="sha384-+ENW/yibaokMnme+vBLnHMphUYxHs34h9lpdbSLuAwGkOKFRl4C34WkjazBtb7eT" crossorigin="anonymous">
   <link href="https://cdn.rawgit.com/afeld/bootstrap-toc/v0.4.1/dist/bootstrap-toc.min.css" rel="stylesheet">
   <link href="{{ "/assets/page.css" | relative_url }}" rel="stylesheet">
-  <link rel="alternate" type="application/atom+xml" title="Blog" href="/blog/atom.xml">
+  {% if page.layout == 'blog' %}
+  <link rel="alternate" type="application/atom+xml" title="{{ page.title }}" href="/blog/{% if page.target %}{{ page.target }}/{% endif %}atom.xml">
+  {% endif %}
   <link rel="icon" href="/favicon.ico">
 </head>
 
@@ -35,10 +37,18 @@
       </div>
       <div class="navbar-collapse collapse" id="navbar-main">
         <ul class="nav navbar-nav">
-          <li><a href="{{ "/blog" | relative_url }}">Blog</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Blog
+              <span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="{{ "/blog/code/" | relative_url }}">Code</a></li>
+              <li><a href="{{ "/blog/life/" | relative_url }}">Life</a></li>
+              <li><a href="{{ "/blog/" | relative_url }}">Code + Life</a></li>
+            </ul>
+          </li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="/"><img src="{{ "/assets/home.png" | relative_url }}" class="navbar-logo"></a></li>
+          <li><a href="{{ "/" | relative_url }}"><img src="{{ "/assets/home.png" | relative_url }}" class="navbar-logo"></a></li>
         </ul>
       </div>
     </div>

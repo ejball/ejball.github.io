@@ -1,15 +1,7 @@
 ---
 layout: blog
+title: "Ed’s Blog: Code + Life"
 ---
-
-<h1>Ed’s Blog</h1>
-
-{% for post in site.posts %}
-<hr>
-<p>{{ post.content }}</p>
-<p class="text-right small">
-  {{ post.categories | join: ' · ' }} · {{ post.tags | join: ' · ' }} —
-  <a href="{{ post.url }}">{{ post.date | date: "%B %-d, %Y" }}</a> —
-  <a href="{{ post.url }}#disqus_thread">comments</a>
-</p>
-{% endfor %}
+If you’re a software developer that also wants to read my personal posts, you’ve come to the right place!
+Otherwise, check out my <a href="{{ "/blog/code/" | relative_url }}">coding blog</a>
+or my <a href="{{ "/blog/life/" | relative_url }}">personal blog</a>.
