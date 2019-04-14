@@ -3,7 +3,7 @@
 
 Christian, husband, father, coder, etc. I'm on [Twitter](https://twitter.com/ejball), [Stack Overflow](https://stackoverflow.com/users/23818/ed-ball), and [LinkedIn](https://www.linkedin.com/in/ejball94/).
 
-Check out my [coding blog](blog/code/) or my [personal blog](blog/life/) (or [both](/blog/)!)
+Check out my [coding blog](blog/code/) or my [personal blog](blog/life/) -- or [both](/blog/)!
 
 ## Open Source Projects
 
