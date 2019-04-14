@@ -1,16 +1,10 @@
 ---
 layout: default
 ---
+{% include blog_variables.html %}
 <div class="row">
   <div class="col-sm-9 content-column">
     <h1>{{ page.title }}</h1>
-    {% if page.target %}
-    {% assign posts = site.categories[page.target] %}
-    {% assign target_slash = page.target | append: '/' %}
-    {% else %}
-    {% assign posts = site.posts %}
-    {% assign target_slash = '' %}
-    {% endif %}
     {% for post in posts %}
     <hr>
     <p>{{ post.content }}</p>
@@ -38,9 +32,11 @@ layout: default
         <div class="panel-title">Subscribe</div>
       </div>
       <div class="panel-body">
-        <a href='https://feedly.com/i/subscription/feed/https%3A//ejball.com/blog/{{ target_slash }}atom.xml' target='blank'><img id='feedlyFollow' src='http://s3.feedly.com/img/follows/feedly-follow-rectangle-volume-medium_2x.png' alt='Follow' width='71' height='28'></a>
+        <a class="btn btn-primary btn-xs" style="height: 28px" role="button" href="https://feedburner.google.com/fb/a/mailverify?uri={{ feedburner_name }}&amp;loc=en_US" target="blank" title="Subscribe by Email"><span class="glyphicon glyphicon-envelope" style="padding-top: 3px"></span></a>
         &nbsp;
-        <a href="{{ '/blog/' | append: target_slash | append: 'atom.xml' | relative_url }}"><img src="{{ "/assets/atom.png" | relative_url }}" width="28" height="28"></a>
+        <a href='https://feedly.com/i/subscription/feed%2Fhttp%3A%2F%2Ffeeds.feedburner.com%2F{{ feedburner_name }}' target='blank' title="Follow on Feedly"><img id='feedlyFollow' src='http://s3.feedly.com/img/follows/feedly-follow-square-volume_2x.png' alt='Feedly' width='28' height='28'></a>
+        &nbsp;
+        <a href="http://feeds.feedburner.com/{{ feedburner_name }}" target="blank" title="Atom Feed"><img src="{{ "/assets/atom.png" | relative_url }}" width="28" height="28"></a>
       </div>
     </div>
   </div>

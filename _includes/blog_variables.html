@@ -1,0 +1,13 @@
+{% if page.target == 'code' %}
+{% assign posts = site.categories.code %}
+{% assign target_slash = 'code/' %}
+{% assign feedburner_name = 'EdsBlogCode' %}
+{% elsif page.target == 'life' %}
+{% assign posts = site.categories.life %}
+{% assign target_slash = 'life/' %}
+{% assign feedburner_name = 'EdsBlogLife' %}
+{% else %}
+{% assign posts = site.posts %}
+{% assign target_slash = '' %}
+{% assign feedburner_name = 'EdsBlogCodeLife' %}
+{% endif %}
