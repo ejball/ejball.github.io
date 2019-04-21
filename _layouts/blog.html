@@ -8,9 +8,9 @@ layout: default
     {% for post in posts %}
     <hr>
     <p>
-      {% assign image_to_find = page.id | replace: '/blog/', '/images/' %}
+      {% assign image_to_find = post.id | replace: '/blog/', '/images/' %}
       {% for image in site.static_files | sort %}
-      {% if image.path contains image_to_find | append: '.' or image.path contains image_to_find2 | append: '-' %}
+      {% if image.path contains image_to_find | append: '.' or image.path contains image_to_find | append: '-' %}
       <a href="{{ post.url }}" class="pull-right" style="margin: 0px 0px 14px 14px">
         <img src="{{ image.path }}" class="img-thumbnail" style="width: 140px">
       </a>
