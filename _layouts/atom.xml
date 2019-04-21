@@ -17,7 +17,15 @@
     <link rel="alternate" type="text/html" href="https://ejball.com{{ post.url }}" />
     <id>https://ejball.com{{ post.url }}</id>
     <updated>{{ post.date | date_to_xmlschema }}</updated>
-    <content type="html">{{ post.content | xml_escape }}</content>
+    <content type="html">
+    {{ post.content | xml_escape }}
+    {% assign image_to_find = post.id | replace: '/blog/', '/images/' %}
+    {% for image in site.static_files | sort %}
+    {% if image.path contains image_to_find | append: '.' or image.path contains image_to_find | append: '-' %}
+    <p style="width: 80%"><a href="https://ejball.com{{ post.url }}"><img src="https://ejball.com{{ image.path }}" /></a></p>
+    {% endif %}
+    {% endfor %}
+    </content>
   </entry>
   {% endfor %}
 </feed>
