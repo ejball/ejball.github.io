@@ -6,7 +6,7 @@ layout: default
   <div class="col-sm-9 content-column">
     <h1>{{ page.title }}</h1>
     {% for post in posts %}
-    <hr>
+    <hr style="clear: both">
     <p>
       {% assign image_to_find = post.id | replace: '/blog/', '/images/' %}
       {% for image in site.static_files | sort %}
