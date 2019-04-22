@@ -6,9 +6,9 @@ layout: default
 
     {{ content }}
 
-    {% assign image_to_find = page.id | replace: '/blog/', '/images/' %}
-    {% for image in site.static_files | sort %}
-    {% if image.path contains image_to_find | append: '.' or image.path contains image_to_find | append: '-' %}
+    {% assign image_to_find = page.id | replace: '/blog/', '/images/' | append: '.' %}
+    {% for image in site.static_files %}
+    {% if image.path contains image_to_find %}
     <p style="width: 80%" class="center-block">
       <a href="{{ image.path }}" data-toggle="lightbox" data-gallery="post">
         <img src="{{ image.path }}" class="img-thumbnail">

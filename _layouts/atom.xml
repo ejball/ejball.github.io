@@ -19,9 +19,9 @@
     <updated>{{ post.date | date_to_xmlschema }}</updated>
     <content type="html">
     {{ post.content | xml_escape }}
-    {% assign image_to_find = post.id | replace: '/blog/', '/images/' %}
-    {% for image in site.static_files | sort %}
-    {% if image.path contains image_to_find | append: '.' or image.path contains image_to_find | append: '-' %}
+    {% assign image_to_find = post.id | replace: '/blog/', '/images/' | append: '.' %}
+    {% for image in site.static_files %}
+    {% if image.path contains image_to_find %}
     <p style="width: 80%; margin: 0 auto">
     <a href="https://ejball.com{{ post.url }}">
     <img src="https://ejball.com{{ image.path }}" style="max-width: 100%; padding: 4px; border: 1px solid #ecf0f1" />
