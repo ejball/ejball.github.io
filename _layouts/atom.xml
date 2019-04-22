@@ -19,6 +19,7 @@
     <updated>{{ post.date | date_to_xmlschema }}</updated>
     <content type="html">
     {{ post.content | xml_escape }}
+    {% capture image_xml %}
     {% assign image_to_find = post.id | replace: '/blog/', '/images/' | append: '.' %}
     {% for image in site.static_files %}
     {% if image.path contains image_to_find %}
@@ -29,6 +30,8 @@
     </p>
     {% endif %}
     {% endfor %}
+    {% endcapture %}
+    {{ image_xml | xml_escape | strip }}
     </content>
   </entry>
   {% endfor %}
