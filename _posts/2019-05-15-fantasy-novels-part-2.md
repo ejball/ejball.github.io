@@ -1,0 +1,7 @@
+---
+title: Fantasy Novels (part 2)
+categories: life
+tags: books
+---
+
+As I [was saying]({% post_url 2019-05-13-fantasy-novels-part-1 %}), I didn't read many **fantasy novels** as a kid. I read through [Harry Potter](https://www.goodreads.com/series/45175-harry-potter) when I was a young parent, but through the eyes of my adolescence, knowing how much I would have loved it. I read the [Inkheart](https://www.goodreads.com/series/44451-inkworld) series at some point, which was okay. I eventually read and liked the [Hunger Games](https://www.goodreads.com/series/73758-the-hunger-games) series, mostly because it was crazy popular and I knew my oldest daughter would love it. I really loved [The Wingfeather Saga](https://www.goodreads.com/series/44505-the-wingfeather-saga), by Andrew Peterson, which I highly recommend. I also started [The Green Ember](https://www.goodreads.com/book/show/23754884-the-green-ember) series, which I didn't like as much, but still want to finish some time. I've bought and read many of the [Tolkien works](https://www.goodreads.com/series/58083-middle-earth-universe) that have been published since his death, which I think are great, but require high levels of Tolkien fandom to really appreciate. More recently I've been reading some of the most highly acclaimed fantasy series, but this post is getting long, so I'll talk about that later.
