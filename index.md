@@ -12,6 +12,7 @@ My open source projects are [hosted on GitHub](https://github.com/ejball):
 * [LaunchGlob](LaunchGlob/): Launches the specified app or file, allowing one glob argument.
 * [RegexMatchValues](RegexMatchValues/): Converts regular expression matches to strong types.
 * [SqlRendering](SqlRendering/): Helps build SQL statements safely.
+* [ToggleResolution](ToggleResolution/): Doubles or halves the primary screen resolution.
 * [XmlDocMarkdown](XmlDocMarkdown/): Generates Markdown from .NET XML documentation comments.
 
 I’m also the creator of the [Facility API Framework](https://facilityapi.github.io/) and an active contributor to many of [Faithlife’s open source projects](https://faithlife.github.io/).
