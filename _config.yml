@@ -1,7 +1,0 @@
-permalink: /blog/:title/
-exclude:
-  - docker-compose.yml
-  - README.md
-show_drafts: false
-future: false
-timezone: "America/Los_Angeles"
